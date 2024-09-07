@@ -1,12 +1,12 @@
 from joblib import load
 import pandas as pd
 
-link = r'C:\Users\91868\OneDrive\pgp\Python\3. Machine learning\7. Projects\Health care premium\Premium_Prediction_App\\'
-model_rest = load(rf'{link}artifacts\model_rest.joblib')
-model_young = load(rf'{link}artifacts\model_young.joblib')
+#link = r'C:\Users\91868\OneDrive\pgp\Python\3. Machine learning\7. Projects\Health care premium\Premium_Prediction_App\\'
+model_rest = load('artifacts/model_rest.joblib')
+model_young = load('artifacts/model_young.joblib')
 
-scaler_rest = load(rf'{link}artifacts\scaler_rest.joblib')
-scaler_young = load(rf'{link}artifacts\scaler_young.joblib')
+scaler_rest = load('artifacts/scaler_rest.joblib')
+scaler_young = load('artifacts/scaler_young.joblib')
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
